@@ -1,0 +1,47 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+//Font Awesome
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/regular";
+@import "@fortawesome/fontawesome-free/scss/solid";
+@import "@fortawesome/fontawesome-free/scss/brands";
+
+/* Css reset */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+// Generics
+a,
+button {
+    text-decoration: none;
+		margin-bottom: 0.5rem;
+}
+
+ul {
+	padding-left: 5px;
+	list-style-position: inside;
+}
+
+// Utilities
+.buttons-col {
+    text-align: center;
+    width: 220px;
+}
+
+.project-property {
+    margin-bottom: 30px;
+}
+
+.img-fluid {
+	border: 1px solid lightblue;
+}
