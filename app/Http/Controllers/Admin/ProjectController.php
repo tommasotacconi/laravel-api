@@ -32,7 +32,7 @@ class ProjectController extends Controller
 		$new_project_data = $request->validated();
 
 		if (isset($new_project_data['img_url'])) {
-			$file_path = Storage::disk('public')->put("images/projects/", $request->img_url);
+			$file_path = Storage::disk('public')->put("images/projects", $request->img_url);
 			$new_project_data['img_url'] = $file_path;
 		}
 		$new_project = Project::create($new_project_data);
