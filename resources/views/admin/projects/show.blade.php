@@ -11,7 +11,12 @@
 	</div>
 	<div class="project-property">
 		{{-- Type added by means of relation functions in controller  --}}
-		<b>Type</b>: {{ $project->type->name }}
+		<b>Type</b>:
+		@if (isset($project->type))
+			{{ $project->type->name }}
+		@else
+		  no type selected
+		@endif
 	</div>
 	<div class="project-property">
 		<b>Arguments</b>
